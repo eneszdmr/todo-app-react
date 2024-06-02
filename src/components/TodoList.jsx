@@ -2,10 +2,14 @@ import React from 'react'
 import Todo from './Todo'
 import '../css/TodoList.css'
 
-function TodoList() {
+function TodoList({ todosList }) {
     return (
         <div className='todoList'>
-            <Todo />
+            {
+                todosList && todosList.map((todo) => (
+                    <Todo key={todo.id} todosList={todo} />
+                ))
+            }
         </div>
     )
 }

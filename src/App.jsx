@@ -8,17 +8,15 @@ function App() {
   const [todos, setTodos] = useState([]);
 
   const createTodo = (todo) => {
+
     setTodos([...todos, todo]);
   }
 
-
-  console.log("first todo", todos)
-  
   return (
     <div className='App'>
       <div className='create-body '>
         <TodoCreate onCreateTodo={createTodo} />
-        <TodoList />
+        <TodoList todosList={todos} />
       </div>
     </div>
   )

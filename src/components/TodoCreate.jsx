@@ -1,0 +1,16 @@
+import React from 'react'
+import '../css/TodoCreate.css'
+
+
+function TodoCreate() {
+
+    return (
+        <div className='todo-create'>
+
+            <input className='todo-input' type='text' placeholder='Todo Giriniz' />
+            <button className='todo-create-button'>Todo Oluştur</button>
+        </div>
+    )
+}
+
+export default TodoCreate

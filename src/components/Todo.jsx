@@ -2,7 +2,7 @@ import React from 'react'
 import { MdDelete } from "react-icons/md";
 import { FiEdit } from "react-icons/fi";
 import '../css/Todo.css'
-function Todo({ todosList }) {
+function Todo({ todosList, onRemoveTodo }) {
     const { id, title } = todosList;
 
     return (
@@ -11,7 +11,7 @@ function Todo({ todosList }) {
                 {title}
             </div>
             <div className='todo-icons'>
-                <MdDelete />
+                <MdDelete onClick={() => onRemoveTodo(id)} />
                 <FiEdit />
             </div>
         </div>

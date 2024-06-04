@@ -5,6 +5,7 @@
     justify-content: space-between;
     border: 1px solid lightgray;
     padding: 10px;
+    margin-top: 10px;
 }
 
 .todo-icons {
@@ -12,4 +13,5 @@
     width: 65px;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }

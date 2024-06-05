@@ -7,7 +7,6 @@ function TodoCreate({ onCreateTodo }) {
     const [newTodo, setNewTodo] = useState('');
 
     const createATodo = () => {
-        debugger;
         if (!newTodo) return;
         const request = {
             id: Math.floor(Math.random() * 1000),
